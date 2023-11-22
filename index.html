@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <title>Random Number Generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <a href="https://codenamedcd.github.io/"> <i class="fa fa-arrow-left" aria-hidden="true"></i> back </a>
+      <p>Random Number</p>
+    </header>
+    <section>
+      <div class="area">
+        <div class="wrapper">
+          <label for="lowlim" class="label">Lower Limit</label>
+          <input id="lowlim" name="lowlim" type="number" class="input" value="1" />
+        </div>
+        <div class="wrapper">
+          <label for="uplim" class="label">Upper Limit</label>
+          <input id="uplim" name="uplim" type="number" class="input" value="10" />
+        </div>
+        <div class="wrapper">
+          <label for="limitInput" class="label">Generate</label>
+          <div class="in-wrap">
+            <input type="number" id="limitInput" name="limitInput" class="input" value="5" />
+            <p>number</p>
+          </div>
+        </div>
+        <div class="wrapper">
+          <label class="label">Duplication</label>
+          <select class="input" id="dupli">
+            <option value="0">No</option>
+            <option value="1" selected="selected">Yes</option>
+          </select>
+        </div>
+        <div class="wrapper">
+          <label class="label">Sort</label>
+          <select class="input" id="srt">
+            <option value="0">No</option>
+            <option value="1">Ascend</option>
+            <option value="2">Descend</option>
+          </select>
+        </div>
+        <div class="wrapper">
+          <label class="label">Type</label>
+          <select class="input" id="dcml">
+            <option value="0">Integer</option>
+            <option value="1">Decimal</option>
+          </select>
+        </div>
+        <div id="decimallabel" class="wrapper">
+          <label class="label">Precision</label>
+          <div class="in-wrap">
+            <input id="decimalPrecisionInput" type="number" class="input" />
+            <p>digit</p>
+          </div>
+        </div>
+        <div class="wrapper">
+          <button class="tombol" id="popit">Generate</button>
+          <button class="tombol" id="reset">Reset</button>
+        </div>
+        <div class="wrapper">
+          <button class="tombol" id="listBtn">Number List</button>
+        </div>
+      </div>
+
+      <div class="area">
+        <p>Result</p>
+        <ul id="output"></ul>
+      </div>
+    </section>
+  </body>
+
+  <script src="main.js"></script>
+</html>

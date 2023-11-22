@@ -1,0 +1,223 @@
+:root {
+  --salmon: #fd8a8a;
+  --black: #373231;
+  --light: #f5f5f5;
+  --darksal: #e27c7c;
+  --dark: #433e3d;
+}
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+/* ================================================== */
+
+header {
+  display: flex;
+  margin: 1rem 2rem;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+header a,
+header p {
+  color: var(--salmon);
+  margin: 0;
+  border: none;
+  text-decoration: none;
+  text-align: center;
+  background-color: var(--dark);
+  padding: 15px 20px;
+  border-radius: 12px;
+  font-weight: bold;
+  width: 50%;
+  text-transform: uppercase;
+
+  transition: all 0.2s ease-in-out;
+}
+header a {
+  background-color: var(--salmon);
+  color: var(--black);
+}
+
+header a:hover {
+  background-color: var(--darksal);
+}
+/* ================================================== */
+body {
+  margin: 0 14rem;
+  box-sizing: border-box;
+  background-color: var(--black);
+  font-family: "Nunito", sans-serif;
+}
+section {
+  margin: 2rem;
+}
+.area {
+  background: var(--dark);
+  padding: 16px;
+  border-radius: 10px;
+  border: 4px var(--salmon) solid;
+}
+.area:nth-child(2) {
+  margin-top: 2rem;
+  max-height: 50vh;
+  overflow-y: scroll;
+}
+.area:nth-child(2) p {
+  margin: 0;
+  text-align: center;
+}
+.wrapper {
+  display: flex;
+  margin-bottom: 9px;
+  column-gap: 10px;
+  align-items: center;
+}
+.wrapper:last-child {
+  margin-bottom: auto;
+}
+ul {
+  list-style-type: decimal;
+}
+ul.addnumblist {
+  list-style-type: none;
+}
+.label {
+  width: 50%;
+}
+.input {
+  width: 50%;
+  border-radius: 5px;
+}
+select,
+button {
+  cursor: pointer;
+}
+select,
+input,
+button {
+  font-weight: bold;
+  color: var(--black);
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  padding: 8px 0;
+}
+label,
+p,
+li {
+  font-weight: bold;
+  color: var(--light);
+}
+.wrapper:nth-child(1) .input,
+.wrapper:nth-child(2) .input,
+.wrapper:nth-child(3) .input,
+.wrapper:nth-child(7) .input {
+  text-align: center;
+}
+.wrapper:nth-child(4) .input,
+.wrapper:nth-child(5) .input,
+.wrapper:nth-child(6) .input {
+  text-align: left;
+  padding-left: 5px;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  opacity: 1;
+  height: 35px;
+}
+.in-wrap {
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+.in-wrap .input {
+  margin-right: 8px;
+}
+.in-wrap p {
+  width: fit-content;
+  margin: 0;
+}
+.tombol {
+  background-color: var(--salmon);
+  width: 100%;
+  text-align: center;
+  border-radius: 5px;
+}
+.tombol:hover {
+  background-color: var(--darksal);
+}
+@media screen and (max-width: 800px) {
+  body {
+    margin: 2rem 1rem;
+    font-size: 1rem;
+  }
+  header p,
+  header a {
+    font-size: 14px;
+  }
+}
+/* .pallete {
+  width: 100%;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: var(--salmon);
+  color: var(--black);
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: var(--salmon) transparent transparent transparent;
+}
+.popup .show {
+  animation: fadeIn 2s;
+  animation-timing-function: ease;
+  animation-direction: reverse;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  20% {
+    opacity: 1;
+    visibility: visible;
+  }
+  50% {
+    opacity: 1;
+    visibility: visible;
+  }
+  80% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+} */
