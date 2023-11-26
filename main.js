@@ -2,9 +2,6 @@ const dcml = document.getElementById("dcml");
 const decimallabel = document.getElementById("decimallabel");
 const decimalPrecisionInput = document.getElementById("decimalPrecisionInput");
 
-let decimalPrecisionElement = document.getElementById("decimalPrecisionInput");
-let decimalPrecision = Number(decimalPrecisionElement.value);
-
 let popit = document.getElementById("popit");
 let reset = document.getElementById("reset");
 let outputElement = document.getElementById("output");
@@ -17,6 +14,8 @@ listBtn.addEventListener("click", function () {
 });
 
 function decimalOption() {
+  let decimalPrecisionElement = document.getElementById("decimalPrecisionInput");
+
   decimallabel.style.opacity = "0.5";
   decimalPrecisionInput.disabled = true;
 
@@ -44,6 +43,9 @@ popit.addEventListener("click", function () {
 });
 
 function generateRandomInt() {
+  let decimalPrecisionElement = document.getElementById("decimalPrecisionInput");
+  let decimalPrecision = Number(decimalPrecisionElement.value);
+
   let max = parseInt(document.getElementById("uplim").value);
   let min = parseInt(document.getElementById("lowlim").value);
   let duplicatesElement = document.getElementById("dupli");
